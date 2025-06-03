@@ -2,7 +2,7 @@
 const API_URL = "https://your-api-url/api";
 
 function login() {
-  const clientId = "YOUR_CLIENT_ID";
+  const clientId = "1379012073551564962";
   const redirectUri = encodeURIComponent(window.location.href);
   const scopes = encodeURIComponent("identify guilds");
   const oauthUrl = \`https://discord.com/api/oauth2/authorize?client_id=\${clientId}&redirect_uri=\${redirectUri}&response_type=token&scope=\${scopes}\`;

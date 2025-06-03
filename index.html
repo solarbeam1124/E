@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Discord Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Manage Servers</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Roblox Discord Dashboard</h1>
+    <button id="loginBtn">Login with Discord</button>
+
+    <div class="profile-section">
+      <label for="serverSelect">Select Server</label>
+      <select id="serverSelect"><option>Loading...</option></select>
+
+      <div class="profile-card">
+        <h2>Your Roblox Profile</h2>
+        <img id="avatar" src="https://via.placeholder.com/100" alt="Avatar" />
+        <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+        <p><strong>Roblox ID:</strong> <span id="robloxId">Loading...</span></p>
+        <p><strong>Join Link:</strong> <span id="joinLink">Loading...</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
